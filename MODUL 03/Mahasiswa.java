@@ -35,7 +35,7 @@ public class TestPBO {
 
         // mhs2 belum diisi atributnya, jadi nilainya masih default (null)
         // setelah itu kita bisa menjalankan method dari object
-        // method dipanggil dengan tanda titik (.)
+        // method dipanggil dengan tanda titik
         mhs1.Haimahasiswa();  // akan menampilkan data dari mhs1
         mhs2.Haimahasiswa();  // karena belum diisi, akan menampilkan null
     }
