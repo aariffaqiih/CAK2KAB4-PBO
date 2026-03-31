@@ -1,35 +1,42 @@
-// menurutku, class itu ibaratnya kaya tabel, dan atribut nya itu adalah kolom, jadi class itu untuk meletakkan data, dan data nya sesuai dengan template yang sudah di class
+// menurutku, class itu seperti cetakan
+// jadi class itu digunakan sebagai template untuk membuat object
+// atribut di dalam class itu adalah data yang nanti akan dimiliki oleh setiap object
 class Mahasiswa {
-    // ada 2 atribut yaitu nama dan nim, nama dan nim pake tipe data string
+    // ada 2 atribut yaitu nama dan nim, keduanya bertipe data String
+    // atribut ini nanti akan menyimpan data untuk setiap object Mahasiswa
     String nama;
     String nim;
 
-    // ini namanya method, ibaratnya method itu hal yang bisa dia lakuin, misalnya ini, class ini bisa melakukan hal yaitu Haimahasiswa, perliku ini adalah menyapa mahasiswa
+    // ini namanya method, method itu adalah perilaku / aksi yang bisa dilakukan oleh object
+    // misalnya di sini, object Mahasiswa bisa melakukan aksi menyapa lewat method Haimahasiswa
     void Haimahasiswa() {
         System.out.println("Hai, nama saya " + nama + " dengan NIM " + nim);
     }
 }
 
-// ini namanya class utama, nama class nya sama persis sama nama file nya, jadi class ini adalah class yang akan dijalankan oleh program ini
+// ini adalah class utama (main class)
+// class ini yang akan dijalankan pertama kali oleh program (karena ada method main)
+// biasanya nama class ini sama dengan nama file
 public class TestPBO {
     public static void main(String[] args) {
-        // tadi aku bilang bahwa class itu ibarat tabel, nah ini adalah isi tabel yang bakal mengisi atribut-atribut di class Mahasiswa
-        // di sini ada 4 hal, yaitu Mahasiswa, mhs1, new, dan Mahasiswa(), arti dari masing-masing komponen ini adalah:
-        // 1. Mahasiswa: ini adalah nama class atau tabel yang tadi dibuat di awal
-        // 2. mhs1: ini adalah nama objek yang nanti datanya akan mengisi atribut-atribut di class Mahasiswa, ibaratnya kode mhs1 ini kaya primary key di setiap baris
-        // 3. new: ini adalah keyword (keyword bawaan java) yang gunanya untuk membuat objek baru
-        // 4. Mahasiswa(): ini adlah constructor, constructor itu gampangnya buat menginisialisasi objek yang udah dibuat tadi pake keyword new
+        // di sini kita membuat object dari class Mahasiswa
+        // ada beberapa komponen penting:
+        // 1. Mahasiswa = nama class (blueprint)
+        // 2. mhs1 = nama variabel yang menyimpan object
+        // 3. new = keyword untuk membuat object baru
+        // 4. Mahasiswa() = constructor (di sini memakai default constructor dari Java)
         Mahasiswa mhs1 = new Mahasiswa();
         Mahasiswa mhs2 = new Mahasiswa();
-        // tadi kita sudah buat objek mhs1, nah ini adalah cara untuk mengisi data nama dari objek mhs1 tadi
-        // formatnnya adalah kode objek + panggil atribut nya
-        // jadi, obbjek mhs1 kemudian dipisah dengan . untuk memanggil atributnya, kemudian atribut nama, setelah itu tinggal = dan isi namanya
-        mhs1.nama = "Bahlil";
-        // ini untuk isi data nim
-        mhs1.nim = "12345";
 
-        // setelah tadi mengisi data, sekarang tinggal ditampilin, ini yang ditampilin adalah method atau perilaku Haimahasiswa
-        mhs1.Haimahasiswa();
-        mhs2.Haimahasiswa();
+        // setelah object dibuat, kita bisa mengisi nilai atributnya
+        // caranya: nama_object.nama_atribut = nilai;
+        mhs1.nama = "Bahlil";   // mengisi atribut nama untuk object mhs1
+        mhs1.nim = "12345";     // mengisi atribut nim untuk object mhs1
+
+        // mhs2 belum diisi atributnya, jadi nilainya masih default (null)
+        // setelah itu kita bisa menjalankan method dari object
+        // method dipanggil dengan tanda titik (.)
+        mhs1.Haimahasiswa();  // akan menampilkan data dari mhs1
+        mhs2.Haimahasiswa();  // karena belum diisi, akan menampilkan null
     }
 }
