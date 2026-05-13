@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumpulan Kode Bootstrap Modul</title>
+    <!-- Bootstrap CDN -->
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .demo-box {
+        background: #e9ecef;
+        border: 1px solid #ced4da;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===================================================== -->
+    <!-- BOOTSTRAP CONTAINER -->
+    <!-- ===================================================== -->
+    <section>
+      <h1 class="mb-4">Bootstrap Container</h1>
+      <div class="container bg-light p-3 mb-4 border">
+        <h4>.container</h4>
+        <p>Container responsive dengan lebar tetap.</p>
+      </div>
+      <div class="container-fluid bg-secondary text-white p-3">
+        <h4>.container-fluid</h4>
+        <p>Container full width memenuhi seluruh layar.</p>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- BOOTSTRAP GRID -->
+    <!-- ===================================================== -->
+    <section>
+      <h1 class="mb-4">Bootstrap Grid</h1>
+      <!-- Struktur dasar grid -->
+      <div class="row">
+        <div class="col-6"><div class="demo-box">col-6</div></div>
+        <div class="col-6"><div class="demo-box">col-6</div></div>
+      </div>
+      <div class="row">
+        <div class="col-4"><div class="demo-box">col-4</div></div>
+        <div class="col-4"><div class="demo-box">col-4</div></div>
+        <div class="col-4"><div class="demo-box">col-4</div></div>
+      </div>
+      <hr class="my-5" />
+      <!-- Contoh penerapan dari modul -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="demo-box">.col-12 .col-md-8</div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="demo-box">.col-6 .col-md-4</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <div class="demo-box">.col-6 .col-md-4</div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="demo-box">.col-6 .col-md-4</div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="demo-box">.col-6 .col-md-4</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6"><div class="demo-box">.col-6</div></div>
+          <div class="col-6"><div class="demo-box">.col-6</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- TEXT STYLE -->
+    <!-- ===================================================== -->
+    <section>
+      <h1 class="mb-4">Bootstrap Text Style</h1>
+      <p class="text-start">Text rata kiri</p>
+      <p class="text-center">Text rata tengah</p>
+      <p class="text-end">Text rata kanan</p>
+      <p class="text-lowercase">TEXT LOWERCASE</p>
+      <p class="text-uppercase">text uppercase</p>
+      <p class="text-capitalize">text capitalize bootstrap</p>
+      <p class="fw-bold">Font Bold</p>
+      <p class="fw-light">Font Light</p>
+      <p class="fw-normal">Font Normal</p>
+      <p class="fst-italic">Text Italic</p>
+      <p class="h1">Heading h1</p>
+      <p class="h2">Heading h2</p>
+      <p class="h3">Heading h3</p>
+      <p class="h4">Heading h4</p>
+      <p class="h5">Heading h5</p>
+      <p class="h6">Heading h6</p>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- BOOTSTRAP TABLE -->
+    <!-- ===================================================== -->
+    <section>
+      <h1 class="mb-4">Bootstrap Table</h1>
+      <!-- Tabel Hover Style -->
+      <table class="table table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nama Lengkap</th>
+            <th scope="col">Asal Kota</th>
+            <th scope="col">Umur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Budi Rojadi</td>
+            <td>Semarang</td>
+            <td>35 th</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Yulia Santi</td>
+            <td>Bekasi</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Fahri Abdilah</td>
+            <td>Medan</td>
+            <td>38 th</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- BOOTSTRAP IMAGE -->
+    <!-- ===================================================== -->
+    <section>
+      <h1 class="mb-4">Bootstrap Image</h1>
+      <div class="container">
+        <h2>Thumbnail & Fluid</h2>
+        <img
+          src="https://picsum.photos/300/200"
+          class="img-thumbnail mb-3"
+          alt="Thumbnail Image"
+        />
+        <br />
+        <img
+          src="https://picsum.photos/800/300"
+          class="img-fluid"
+          alt="Responsive image"
+        />
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- BOOTSTRAP BUTTON -->
+    <!-- ===================================================== -->
+    <section>
+      <h1 class="mb-4">Bootstrap Button</h1>
+      <div class="container">
+        <h4>Button Styles</h4>
+        <button type="button" class="btn btn-secondary btn-md">
+          Secondary
+        </button>
+        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+        <button type="button" class="btn btn-success w-100 mt-2 mb-2">
+          Success
+        </button>
+        <button type="button" class="btn btn-info btn-sm">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- BOOTSTRAP FORM -->
+    <!-- ===================================================== -->
+    <section>
+      <h1 class="mb-4">Bootstrap Form</h1>
+      <div class="container">
+        <h3>Horizontal form</h3>
+        <form action="/action_page.php">
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" for="uname">
+              Username:
+            </label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="uname"
+                placeholder="Enter username"
+                name="uname"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" for="pwd"> Password: </label>
+            <div class="col-sm-10">
+              <input
+                type="password"
+                class="form-control"
+                id="pwd"
+                placeholder="Enter password"
+                name="pwd"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-sm-2 col-sm-10">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
